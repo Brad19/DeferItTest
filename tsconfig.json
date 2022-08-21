@@ -20,7 +20,7 @@
     "moduleResolution": "node",
     "lib": [
       "es2019",
-      "dom"
+      // "dom"
     ],
     "types" : ["jest"],
     "sourceMap": true,
@@ -47,8 +47,6 @@
     "forceConsistentCasingInFileNames": true,   // check case sensitivity of file to be consistent - `fileName` vs `FileName`
 
     "strictNullChecks": true,                   // strict check for `null` values, `undefined` and `null` will have their own type checking
-    "strictBindCallApply": true,                // check for correct arguments usage of `bind`, `call` and `apply` functions
-    "strictFunctionTypes": true,                // strict check for correct arguments in function to match function type declaration\
     /*
      * With typescript > v4.4 usage of this property (`useUnknownInCatchVariables`) is now `true` by default with `"strict": true`,
      * so `error` in `catch` clause is `unknown` type instead of `any` as it previously was with the older released of ts
