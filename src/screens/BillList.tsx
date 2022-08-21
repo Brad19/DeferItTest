@@ -41,6 +41,7 @@ const BillList = (): ReactElement => {
         data={loadList}
         contentContainerStyle={{ flexGrow: 1, bottom: 20 }}
         ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}
+        ListHeaderComponent={() => <View style={{paddingTop: 20}}/>}
         renderItem={(props) => <ListItem {...props} />}
         keyExtractor={(item : ListRenderItemProps ) => 'item_' + item.id}
         onEndReached={() => {
