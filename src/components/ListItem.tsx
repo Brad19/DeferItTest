@@ -58,7 +58,7 @@ const ListItem: ListRenderItem<ListRenderItemProps> = ({ item }) => {
 
                 {item.status}
               </Text>
-              {popupMessage ? <Popup message={popupMessage} status={item.status}/> : null}
+              {popupMessage ? <Popup message={popupMessage} status={item.status} /> : null}
             </View>
           </View>
         </>

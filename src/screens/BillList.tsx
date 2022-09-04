@@ -16,7 +16,6 @@ const BillList = (): ReactElement => {
       try {
         const response = await axios.get('https://62fe254341165d66bfb96933.mockapi.io/api/v1/bills/list');
         setBillList(response.data);
-
         return;
       } catch (e) {
         console.log('e :', e);
@@ -37,7 +36,7 @@ const BillList = (): ReactElement => {
   return (
     <>
       {loadList?.length > 0 ?
-        <FlatList
+      <FlatList
         data={loadList}
         contentContainerStyle={{ flexGrow: 1, bottom: 20 }}
         ItemSeparatorComponent={() => <View style={styles.itemSeparator} />}

@@ -60,6 +60,14 @@
      * */
     "useUnknownInCatchVariables": false
   },
+  "plugins": [
+    {
+      "name": "typescript-styled-plugin",
+      "lint": {
+        "validProperties": ["margin-horizontal", "padding-horizontal", "padding-vertical", "tint-color"]
+      }
+    }
+  ],
   "include": [
     "./src/**/*",
     "./types/global.d.ts",
